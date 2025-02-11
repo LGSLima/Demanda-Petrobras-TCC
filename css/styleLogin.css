@@ -1,0 +1,108 @@
+/* Configurações gerais para todos os elementos: estilo da caixa, cor do texto e fontes */
+* {
+    box-sizing: border-box;  /* Inclui padding e bordas no cálculo da largura e altura. */
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body{
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 100%;
+    color: #3E3A34;
+}
+
+.btn {
+    font-size: .8rem;
+    font-weight: 700;
+}
+
+.bg-holder {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.bg-holder img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+
+.divider-content-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0 .5rem 0 .5rem;
+    background-color: #FFF;
+    font-size: .8rem;
+    font-weight: 500;
+    color: #999;
+    white-space: nowrap;
+}
+
+.btn-warning {
+    background-color: #D4A59A;
+    border-color: #D4A59A;
+    color: #3E3A34;
+}
+
+.btn-outline-warning {
+    border-color: #D4A59A;
+    color: #3E3A34;
+}
+
+.btn-warning:hover, 
+.btn-outline-warning:hover, 
+.btn-outline-warning:active {
+    background-color: #C8958A !important;
+    border-color: #C8958A !important;
+    color: white !important;
+}
+
+.link-warning, 
+.link-warning:hover, 
+.link-warning:visited {
+    color: #3E3A34 !important;
+    text-decoration-color: #3E3A34 !important;
+}
+
+.input-group-text {
+    background-color: #A3B899 !important; 
+    color: white;
+}
+
+.form-check-input:checked {
+    background-color: #3E3A34;
+    border-color: #3E3A34;
+}
+
+.form-check-input:focus {
+    border-color: #3E3A34;
+    outline: none;
+    box-shadow: 0 0 0 0.25rem rgba(168, 138, 129, 0.5);
+}
+
+.form-control:focus {
+    border-color: #A3B899;
+    box-shadow: 0 0 0 0.25rem rgba(163, 184, 153, 0.5);
+}
+
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
