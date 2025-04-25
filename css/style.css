@@ -13,9 +13,35 @@ body{
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    overflow-x: hidden;
+}
+
+i{
+    font-size: 1.5rem;
 }
 
 .bg-azul {
-    background-color: #102236;
+    background-color: #75c4ca;
+}
+
+.icon-apres{
+    background-color: #75c4ca;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-right: 10px;
+    padding-left: 10px;
+    border-radius: 3px;
+}
+
+.nav-link {
+    color: rgb(61, 61, 61);
+    text-decoration: none;
+    transition: background-color 0.4s ease;
+}
+
+.active {
+    color: black;
+}
+
+.nav-link:hover {
+    color: rgb(109, 109, 109);
 }
