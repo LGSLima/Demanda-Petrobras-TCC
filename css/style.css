@@ -45,3 +45,15 @@ i{
 .nav-link:hover {
     color: rgb(109, 109, 109);
 }
+
+.bg-laranja {
+    background-color: #fe762d;
+}
+
+.bg-footer {
+    background-color: #001528;
+}
+
+.bg-prefooter {
+    background-color: #647382;
+}
