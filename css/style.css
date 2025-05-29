@@ -1,11 +1,14 @@
 * {
     box-sizing: border-box;
-    font-family: "Poppins", serif;
-    font-weight: 400;
+    scrollbar-width: thin;
+    scrollbar-color: #888 #f1f1f1;
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 450;
     font-style: normal;
 }
 
-body{
+body {
     background-color: white;
     margin: 0;
     padding: 0;
@@ -15,15 +18,33 @@ body{
     min-height: 100vh;
 }
 
-i{
+i {
     font-size: 1.5rem;
+}
+
+.img-relato {
+    position: absolute; 
+    top: 0; left: 0; 
+    max-width: 400px; 
+    max-height: 500px;
+    z-index: 1;
+    border: solid 1px #0097b2;
+}
+
+.img-shadow {
+    position: absolute; 
+    top: 30px; 
+    left: 30px; 
+    width: 350px; 
+    height: 500px; 
+    background-color: #0097b2;
 }
 
 .bg-azul {
     background-color: #75c4ca;
 }
 
-.icon-apres{
+.icon-apres {
     background-color: #75c4ca;
     padding-top: 3px;
     padding-bottom: 3px;
@@ -56,4 +77,24 @@ i{
 
 .bg-prefooter {
     background-color: #647382;
+}
+
+::-webkit-scrollbar {
+    width: 12px;     
+    height: 12px;     
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;      
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;          
+    border-radius: 10px;
+    border: 3px solid #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
 }
