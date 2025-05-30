@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Definindo o conjunto de caracteres UTF-8 e a meta tag de visualização responsiva para dispositivos móveis -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!-- Título da página que aparece na aba do navegador -->
+        <title>Unity +</title>
+
+        <!-- Link para os ícones do Bootstrap -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+        <!-- Font Awesome Icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+        <!-- Ícone do site -->
+        <link rel="icon" href="#" type="image/x-icon">
+
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+        
+        <!-- Bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" 
+        rel="stylesheet" 
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" 
+        crossorigin="anonymous">
+        
+        <!-- CSS -->
+        <link rel="stylesheet" href="/css/style.css">
+    </head>
+
+    <body>
+        <nav class="navbar navbar-expand-lg mx-lg-5 px-lg-5 mx-4">
+            <div class="container-fluid my-3">
+                <a href="index.html" class="navbar-brand"><h1><strong>Unity +</strong></h1></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu-navigation" aria-controls="menu-navigation" aria-expanded="false" aria-label="Toggle Navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="menu-navigation">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 d-lg-flex gap-lg-4" style="font-size: 1.1rem;">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link" aria-current="page"><i class="bi bi-house-door-fill h4"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="relato.html" class="nav-link active" aria-current="page">Relato</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" aria-current="page">Fórum</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" aria-current="page">Sobre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" aria-current="page">Contato</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link d-flex gap-2" aria-current="page">
+                                <i class="bi bi-person-circle h4"></i>
+                                <span>Entrar</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <main class="d-flex flex-column align-items-center">
+            <article class="container my-5 pb-5 row align-items-center" style="min-height: 80vh;">
+                <section class="col-lg-6 col-12 my-4">
+                    <h1 class="fw-bold">Relate para transformar</h1>
+                    <h4 class="fw-bold">Sua cooperação é essencial para o avanço desse projeto.</h4>
+                    <p>Registre a situação com facilidade e acompanhe em tempo real o processo de ação.</p>
+                    <div class="small mb-2">
+                        <b>Totalmente Seguro:</b>
+                        <ul class="small" style="width: 60%;">
+                            <li>Dados protegidos pela LGPD.</li>
+                            <li>Criptografia de ponta a ponta.</li>
+                            <li>Anonimato garantido.</li>
+                        </ul>
+                    </div>
+                    <p class="small">Relatos nas últimas 24h: <span class="fw-bold">132</span> relato(s). | Satisfação: 92% ✅.</p>
+                </section>
+                <section class="col-lg-6 col-12 d-flex justify-content-center align-items-center my-4">
+                    <div style="position: relative; width: 400px; height: 500px;">
+                        <div class="shadow rounded-4 img-shadow img-fluid"></div>
+                        <img src="image/relato.png" alt="Pessoas de uma comunidade tirando um retrato" class="rounded-4 shadow border img-relato">
+                    </div>
+                </section>
+            </article>
+
+            <div class="w-100 d-lg-flex mt-lg-5 pt-lg-5 d-none justify-content-center" style="position: relative; z-index: 2;">
+                <div class="d-flex flex-row gap-4 justify-content-center w-100" style="margin-top: -70px; margin-bottom: -70px;">
+                    <div class="card" style="min-width: 220px; max-width: 260px;">
+                        <div class="card-body">
+                            <h5 class="card-title">Prioridade</h5>
+                            <p class="card-text small">Selecione qual a prioridade do seu relato.</p>
+                        </div>
+                    </div>
+                    <div class="card" style="min-width: 220px; max-width: 260px;">
+                        <div class="card-body">
+                            <h5 class="card-title">Tipo</h5>
+                            <p class="card-text small">Selecione o tipo de relato você deseja realizar.</p>
+                        </div>
+                    </div>
+                    <div class="card" style="min-width: 220px; max-width: 260px;">
+                        <div class="card-body">
+                            <h5 class="card-title">Relate</h5>
+                            <p class="card-text small">Insira os dados necessários para completar o seu relato.</p>
+                        </div>
+                    </div>
+                    <div class="card" style="min-width: 220px; max-width: 260px;">
+                        <div class="card-body">
+                            <h5 class="card-title">Pronto</h5>
+                            <p class="card-text small">Seu relato será analisado e você pode acompanhar o andamento pelo seu perfil.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <article class="container-fluid row justify-content-center py-5" style="background-color: #0097b2; min-height: 200px; position: relative;">
+                <section class="container row justify-content-around g-3 gap-2 my-5 d-lg-none d-flex">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Prioridade</h5>
+                            <p class="card-text">Selecione qual a prioridade do seu relato.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Tipo</h5>
+                            <p class="card-text">Selecione o tipo de relato você deseja realizar.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Relate</h5>
+                            <p class="card-text">Insira os dados necessários para completar o seu relato.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Pronto</h5>
+                            <p class="card-text">Seu relato será analisado em até 24h (Urgências em 1h).</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="mt-5 text-white row justify-content-center">
+                    <h1 class="col-12 mt-4 mb-5 text-center fw-bold">Área de Relatos</h1>
+                    <div class="col-lg-5 col-12 text-center d-flex justify-content-center align-items-center">
+                        <h2 class="w-50 rounded p-2 ms-lg-auto">
+                            Dicas Rápidas
+                        </h2>
+                    </div>
+                    <hr class="d-lg-none" style="width: 75%;">
+                    <div class="col-lg-1 d-lg-flex d-none justify-content-center align-items-center">
+                        <div class="bg-light h-100 rounded" style="width: 0.3rem;"></div>
+                    </div>
+                    <div class="col-lg-5 col-12 d-flex justify-content-center mt-2 align-items-center">
+                        <ul class="bg-light text-dark py-2 px-5 d-flex flex-column justify-content-center me-auto w-auto rounded">
+                            <li>Urgências exigem localização precisa.</li>
+                            <li>Relatos com mídias aumentam a precisão do relato.</li>
+                            <li>Acompanhe seu relato na seção "Meus Relatos" no seu perfil.</li>
+                        </ul>
+                    </div>
+                </section>
+            </article>
+
+            <article class="container mt-4 row justify-content-center align-items-center">
+                <section class="d-flex flex-column justify-content-center align-items-center mt-3">
+                    <h4 class="mb-3">Selecione a prioridade do relato que deseja criar</h4>
+                    <p>Se a atente à gravidade da situação para garantir que seu relato seja melhor interpretado.</p>
+                </section>
+
+                <section class="row d-flex justify-content-around g-3 mb-5 ">
+                    <div class="card d-flex flex-column" style="min-width: 220px; max-width: 260px;">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Urgência <i class="bi bi-exclamation-circle text-danger h6"></i></h5>
+                            <p class="card-text flex-grow-1">
+                                <p>Risco iminente à vida ou dano ambiental irreversível.</p>
+                                <span class="small">Requer ação em até 24 horas.</span>
+                            </p>
+                            <hr>
+                            <p class="small">(Ex: Vazamento químico ativo, desabamento, violência em andamento)</p>
+                        </div>
+                        <button 
+                            class="btn btn-danger w-100 mb-2" 
+                            type="button" 
+                            data-bs-toggle="collapse" 
+                            data-bs-target="#formUrg" 
+                            aria-controls="formUrg" 
+                            aria-expanded="false" 
+                            aria-label="Toggle Forms">
+                            Relatar
+                        </button>
+                    </div>
+                    <div class="card d-flex flex-column" style="min-width: 220px; max-width: 260px;">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Prioridade Alta <i class="bi bi-exclamation-circle text-warning h6"></i></h5>
+                            <p class="card-text flex-grow-1">
+                                <p>Problema com impacto significativo na comunidade.</p>
+                                <span class="small">Requer ação de 48 à 72 horas.</span>
+                            </p>
+                            <hr>
+                            <p class="small">(Ex: Falha no abastecimento de água, focos de doença, árvore prestes a cair)</p>
+                        </div>
+                        <button 
+                            class="btn btn-warning w-100 mb-2"
+                            type="button" 
+                            data-bs-toggle="collapse" 
+                            data-bs-target="#formAlta" 
+                            aria-controls="formAlta" 
+                            aria-expanded="false" 
+                            aria-label="Toggle Forms">
+                            Relatar
+                        </button>
+                    </div>
+                    <div class="card d-flex flex-column" style="min-width: 220px; max-width: 260px;">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Prioridade Média <i class="bi bi-exclamation-circle text-primary h6"></i></h5>
+                            <p class="card-text flex-grow-1">
+                                <p>Situação que causa desconforto ou risco potencial.</p>
+                                <span class="small">Requer ação de 1 à 2 semanas.</span>
+                            </p>
+                            <hr>
+                            <p class="small">(Ex: Buraco na via pública, lixo acumulado, poste com fiação exposta)</p>
+                        </div>
+                        <button class="btn btn-primary w-100 mb-2">Relatar</button>
+                    </div>
+                    <div class="card d-flex flex-column" style="min-width: 220px; max-width: 260px;">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Prioridade Baixa <i class="bi bi-exclamation-circle text-success h6"></i></h5>
+                            <p class="card-text flex-grow-1">
+                                <p>Melhoria ou problema crônico sem risco imediato.</p>
+                                <span class="small">Requer ação em até 30 dias.</span>
+                            </p>
+                            <hr>
+                            <p class="small">(Ex: Calçada irregular, sinalização desgastada, poda de árvores preventiva)</p>
+                        </div>
+                        <button class="btn btn-success w-100 mb-2">Relatar</button>
+                    </div>
+                </section>
+            </article>
+
+            <div class="container px-5">
+                <div class="collapse row align-items-center justify-content-center" id="formUrg">
+                    <form class="p-3 bg-body-tertiary shadow rounded-4 mb-3" style="width: 80%;">
+                        <div class="gap-2 mb-3 row">
+                            <div class="col-auto">
+                                <label for="select-urg" class="form-label">Selecione o tipo de relato</label>
+                                <select class="form-select" id="select-urg" aria-label="Selecione o tipo de relato" required>
+                                    <option value="" selected disabled>Selecione...</option>
+                                    
+                                    <optgroup label="- Risco à Vida Humana">
+                                        <option value="vitimas_soterradas">Vítimas Soterradas</option>
+                                        <option value="intoxicacao_aguda">Intoxicação Aguda Coletiva</option>
+                                        <option value="acidente_multiplas_vitimas">Acidente com Múltiplas Vítimas</option>
+                                        <option value="violencia_massiva">Episódio de Violência Coletiva</option>
+                                    </optgroup>
+
+                                    <optgroup label="- Desastre Ambiental">
+                                        <option value="vazamento_quimico">Vazamento Químico em Curso</option>
+                                        <option value="contaminacao_agua">Contaminação de Fonte Hídrica</option>
+                                        <option value="incendio_florestal">Incêndio Florestal Expansivo</option>
+                                        <option value="rompimento_barragem">Rompimento de Barragem</option>
+                                    </optgroup>
+
+                                    <optgroup label="- Colapso Estrutural">
+                                        <option value="desabamento_iminente">Desabamento Iminente</option>
+                                        <option value="explosao_estrutural">Risco de Explosão Estrutural</option>
+                                        <option value="deslizamento_ativo">Deslizamento em Andamento</option>
+                                        <option value="queda_ponte">Colapso de Ponte/Viaduto</option>
+                                    </optgroup>
+
+                                    <optgroup label="- Emergência Sanitária">
+                                        <option value="surto_doenca">Surto de Doença Contagiosa</option>
+                                        <option value="contaminacao_alimentar">Contaminação Alimentar Coletiva</option>
+                                        <option value="falha_sanitaria">Falha em Sistema de Saneamento</option>
+                                    </optgroup>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="gap-2 mb-3 row">
+                            <div class="col-auto">
+                                <label class="form-label" for="cpf-usuario-u">CPF</label>
+                                <input type="text" id="cpf-usuario-u" class="form-control" aria-label="Insira o seu cpf" placeholder="000.000.000-00" required>
+                            </div>
+                            <div class="col-auto">
+                                <label for="comun-usuario-u" class="form-label">Comunidade</label>
+                                <input type="text" id="comun-usuario-u" class="form-control" aria-label="Insira o nome de sua comunidade" placeholder="Petrovale" required>
+                            </div>
+                            <div class="col-auto">
+                                <label for="data-relato-u" class="form-label">Data</label>
+                                <input type="date" id="data-relato-u" class="form-control" aria-label="Data do acontecimento" required>
+                            </div>
+                            <div class="col-auto">
+                                <label for="hora-relato-u" class="form-label">Horário</label>
+                                <input type="time" id="hora-relato-u" class="form-control" aria-label="Hora do acontecimento" required>
+                            </div>
+                        </div>
+                        <div class="gap-2 mb-3 row">
+                            <div class="col-auto">
+                                <label class="form-label" for="cpf-tel1-u">Telefone 1</label>
+                                <input type="text" id="cpf-tel1-u" class="form-control" aria-label="Insira o seu telefone" placeholder="(00) 0 0000-0000" required>
+                            </div>
+                            <div class="col-auto">
+                                <label class="form-label" for="cpf-tel2-u">Telefone 2 <span class="form-text"></span></label>
+                                <input type="text" id="cpf-tel2-u" class="form-control" aria-label="Insira o seu telefone" placeholder="(00) 0 0000-0000" required>
+                            </div>
+                        </div>
+                        <div class="gap-2 mb-3 row">
+                            <div class="col-auto">
+                                <label for="img-usuario-u" class="form-label">Imagens <span class="form-text">(máx. 50mb)</span></label>
+                                <input type="file" id="img-usuario-u" class="form-control" aria-label="Insira imagens do ocorrido" accept="image/*" multiple required>
+                            </div>
+                            <div class="col-auto">
+                                <label for="vid-relato-u" class="form-label">Videos <span class="form-text">(máx. 50mb)</span></label>
+                                <input type="file" id="vid-relato-u" class="form-control" aria-label="Insira videos do ocorrido" accept="video/*" multiple required>
+                            </div>
+                            <div class="col-auto">
+                                <label for="aud-relato-u" class="form-label">Áudios <span class="form-text">(máx. 50mb)</span></label>
+                                <input type="file" id="aud-relato-u" class="form-control" aria-label="Insira videos do ocorrido" accept="audio/*" multiple required>
+                            </div>
+                            <div class="col-auto">
+                                <label for="loc-comu-u" class="form-label">Localização</label>
+                                <button type="button" id="loc-comun-u" class="form-control btn btn-outline-secondary">Enviar Localização</button>
+                            </div>
+                        </div>
+                        <div class="gap-2 mb-3">
+                            <label for="desc-usuario-u" class="form-label">Descrição</label>
+                            <textarea id="desc-usuario-u" class="form-control w-75" aria-label="Insira descrição sobre o acontecimento" maxlength="200" placeholder="Descreva brevemente o ocorrido..."></textarea>
+                        </div>
+                        <div class="gap-2 mb-3">
+                            <label for="act-usuario-u" class="form-label">Ações</label>
+                            <textarea id="act-usuario-u" class="form-control w-75" aria-label="Insira descrição sobre o acontecimento" maxlength="500" placeholder="Descreva as ações já tomadas..."></textarea>
+                        </div>
+                        <div class="gap-2 mb-3">
+                            <label for="rec-usuario-u" class="form-label">Recomendações</label>
+                            <textarea id="rec-usuario-u" class="form-control w-75" aria-label="Insira descrição sobre o acontecimento" maxlength="500" placeholder="Escreva as recomendações do especialistas..."></textarea>
+                        </div>
+                        <div class="gap-2 mb-3">
+                            <p class="form-text">Todos os campos são obrigatórios.</p>
+                            <div class="form-check mb-4 ">
+                                <div class="d-flex align-items-start gap-2">
+                                    <i class="bi bi-exclamation-circle-fill text-danger mt-1"></i>
+                                    <div>
+                                        <p for="confirm-form" class="small w-75 border-start border-3 border-danger ps-3 py-2">
+                                            Declaro, sob as penas da lei, que as informações fornecidas são verídicas 
+                                            e estou ciente que falsas comunicações de emergência constituem crime previsto no 
+                                            <a href="#" class="text-danger">Art. 340 do Código Penal</a>, com pena de detenção de 1 a 6 meses ou multa.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="gap-2 mb-3">
+                            <button class="btn btn-outline-success" type="submit">Enviar Relato</button>
+                            <button class="btn btn-outline-danger" type="submit">Resetar</button>                    
+                        </div>
+                    </form>
+                </div>
+
+                <div class="collapse" id="formAlta">
+                    <form class="p-3 bg-body-tertiary rounded-4">
+                        <div class="mb-3">
+                            <label for="select-urg" class="form-label" >Selecione o tipo de relato</label>
+                            <select class="form-select w-50" id="select-urg" aria-label="Selecione o tipo de relato">
+                                <option value="" selected disabled>Selecione...</option>
+                                <option value="vazamento_quimico">Vazamento Químico</option>
+                                <option value="desabamento">Risco de Desabamento</option>
+                                <option value="violencia_ativa">Violência em Andamento</option>
+                                <option value="acidente_vitimas">Acidente com Vítimas</option>
+                                <option value="incendio">Incêndio Ativo</option>
+                            </select>
+                        </div>
+                        <div class="gap-2 mb-3 row">
+                            <div class="col-auto">
+                                <label class="form-label" for="cpf-usuario">CPF:</label>
+                                <div class="col-auto">
+                                    <input type="text" id="cpf-usuario" class="form-control" aria-label="Insira o seu cpf" placeholder="000.000.000-00">
+                                </div>
+                            </div>
+                            <div class="col-auto">
+                                <label for="comun-usuario" class="form-label">Comunidade</label>
+                                <input type="text" id="comun-usuario" class="form-control" placeholder="Petrovale">
+                            </div>
+                            <div class="col-auto">
+                                <label for="data-relato" class="form-label">Data</label>
+                                <input type="date" id="data-relato" class="form-control">
+                            </div>
+                            <div class="col-auto">
+                                <label for="hora-relato" class="form-label">Horário</label>
+                                <input type="time" id="hora-relato" class="form-control">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <aside class="container-fluid bg-prefooter text-white py-5 mt-5">
+                <div class="container py-5">
+                    <div class="row">
+                        <!-- Logo e descrição -->
+                        <div class="col-md-3 mb-4">
+                            <h4 class="fw-bold">Logo</h4>
+                            <p>Lorem, ipsum dolor.</p>
+                        </div>
+            
+                        <!-- Contato -->
+                        <div class="col-md-3 mb-4">
+                            <h5 class="fw-bold">Lorem</h5>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                            <p>Lorem, ipsum dolor.</p>
+                            <p>Lorem, ipsum dolor.</p>
+                        </div>
+            
+                        <!-- Links rápidos -->
+                        <div class="col-md-3 mb-4">
+                            <h5 class="fw-bold">Lorem, ipsum.</h5>
+                            <ul class="list-unstyled">
+                                <li><a href="#" class="text-white text-decoration-none">Lorem, ipsum.</a></li>
+                                <li><a href="#" class="text-white text-decoration-none">Lorem, ipsum.</a></li>
+                                <li><a href="#" class="text-white text-decoration-none">Lorem, ipsum.</a></li>
+                            </ul>
+                        </div>
+            
+                        <!-- Assinatura e redes sociais -->
+                        <div class="col-md-3">
+                            <h5 class="fw-bold">Lorem</h5>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <form class="d-flex">
+                                <input type="email" class="form-control me-2" placeholder="Email *" required>
+                                <button type="submit" class="btn btn-dark">Lorem</button>
+                            </form>
+                            <ul class="list-unstyled mt-3">
+                                <li><a href="#" class="text-white text-decoration-none">Lorem</a></li>
+                                <li><a href="#" class="text-white text-decoration-none">Lorem</a></li>
+                                <li><a href="#" class="text-white text-decoration-none">Lorem</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+        </main>
+
+        <footer class="container-fluid text-white bg-footer py-2">
+                <div class="text-center">
+                    <span>© 2025 Integra</span>
+                </div>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" 
+            integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" 
+            crossorigin="anonymous">
+        </script>
+    </body>
+</html>
