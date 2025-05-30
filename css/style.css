@@ -26,17 +26,16 @@ i {
     position: absolute; 
     top: 0; left: 0; 
     max-width: 400px; 
-    max-height: 500px;
+    max-height: 580px;
     z-index: 1;
-    border: solid 1px #0097b2;
 }
 
 .img-shadow {
     position: absolute; 
     top: 30px; 
     left: 30px; 
-    width: 350px; 
-    height: 500px; 
+    width: 400px; 
+    height: 570px; 
     background-color: #0097b2;
 }
 
