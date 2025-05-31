@@ -35,8 +35,10 @@ i {
     top: 30px; 
     left: 30px; 
     width: 400px; 
-    height: 570px; 
-    background-color: #0097b2;
+    height: 560px;
+    background: linear-gradient(135deg, #0097b2 30%, #43c6ac 100%); 
+    position: absolute; 
+    filter: blur(8px);
 }
 
 .bg-azul {
@@ -96,4 +98,20 @@ i {
 
 ::-webkit-scrollbar-thumb:hover {
     background: #555;
+}
+
+#formAlta .alert-warning {
+    border-left: 4px solid #ffc107;
+}
+
+#formUrg .alert-danger {
+    border-left: 4px solid #dc3545;
+}
+
+#formMedia .alert-primary {
+    border-left: 4px solid #0d6efd;
+}
+
+#formBaixa .alert-success {
+    border-left: 4px solid #097709;
 }
