@@ -115,3 +115,23 @@ i {
 #formBaixa .alert-success {
     border-left: 4px solid #097709;
 }
+
+.btn-gov {
+    background-color: #2964af;
+    color: white;
+}
+
+.btn-gov:hover {
+    background-color: #4776b4;
+    color: white;
+}
+
+.btn-unity, .bg-unity {
+    background-color: #102236;
+    color: white;
+}
+
+.btn-unity:hover {
+    background-color: #28425f;
+    color: white;
+}
